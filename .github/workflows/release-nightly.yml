@@ -12,7 +12,7 @@ jobs:
     if: github.event_name != 'schedule' || github.repository == 'keycloak/keycloak-nodejs-connect'
     uses: ./.github/workflows/x-release.yml
     with:
-      gh-org: keycloak
+      gh-org: rmartinc
       branch: ${{ github.ref_name }}
       tag: nightly
       nightly: true
